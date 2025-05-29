@@ -49,7 +49,7 @@ class RelationsOneToManyAndInverseApplicationTests {
 	@Test
 	@Transactional(readOnly = true)
 	void getCustomerAndPhoneNumbers() {
-		Customer customer = customerRepo.findById(2).orElse(null);
+		Customer customer = customerRepo.findById(3).orElse(null);
 		if (customer != null) {
 			System.out.println("Customer: " + customer.getName());
 			// Fetching phone numbers (lazy loading)
